@@ -10,6 +10,7 @@
     display: flex;
     background-color: lightgray;
 }
+
 .header-bar .left-bar {
     display: flex;
     width: 40%;
@@ -36,7 +37,9 @@
 
 .header-bar .right-bar {
     display: flex;
+    align-items:center;
 }
+
 .header-bar .right-bar .rectangle{
     border: 3px solid white;
     background-color: grey;
@@ -44,7 +47,89 @@
     height: 80%;
 }
 
+/* ********* main ********* */
+
+.container {
+    padding-top: 10px;
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+}
+
+.container .row-top {
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 20px;
+    align-items: flex-end;
+
+}
+
+.container .row-top .bordo {
+    background: linear-gradient(#3d3d3d, #1f1f1f); 
+    border-radius: 5px;
+    display: flex;
+
+}
+#sinistra {
+    margin-right: 20px;
+
+}
+.container .row-top h4 {
+    color: white;
+    padding: 4px;
+
+}
+.container .row-top img {
+    filter: invert();
+    height: 100%;
+    padding: 4px;
+    /* align-self: center; */
+
+}
+
+
+.container .row {
+    display: flex;
+}
+
+.container .row .side-bar {
+    width: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.container .row .side-bar i {
+    height: 20px;
+    width: 20px;
+    color: grey;
+}
+.container .row .main-content {
+    width: 90%;
+}
 /* ********* debug  ********* */
+
+.debug .container .row {
+    /* height: 500px; */
+}
+
+.debug .container .row .side-bar {
+    background-color: blue;
+}
+
+.debug .container .row .main-content .element {
+    width: 340px;
+    height: 170px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.debug .container .row .main-content {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 /* .debug .header-bar {
     height: 100px;
