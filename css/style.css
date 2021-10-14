@@ -3,8 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    height: 100vh;
+}
 /* ********* header ********* */
 .header-bar {
     display: flex;
@@ -53,7 +57,7 @@
     padding-top: 10px;
     background-color: black;
     width: 100%;
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .container .row-top {
@@ -84,52 +88,82 @@
     filter: invert();
     height: 100%;
     padding: 4px;
-    /* align-self: center; */
-
 }
-
 
 .container .row {
     display: flex;
+    margin-top: 20px;
 }
 
 .container .row .side-bar {
     width: 5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .container .row .side-bar i {
-    height: 20px;
-    width: 20px;
+    font-size: 60px;
     color: grey;
+}
+.container .row .side-bar h4 {
+    color: white;
+}
+.container .row .side-bar.right i {
+    color: rgb(46, 186, 255)
 }
 .container .row .main-content {
     width: 90%;
 }
-/* ********* debug  ********* */
 
-.debug .container .row {
-    /* height: 500px; */
-}
-
-.debug .container .row .side-bar {
-    background-color: blue;
-}
-
-.debug .container .row .main-content .element {
+.container .row .main-content .element {
+    display: flex;
     width: 340px;
     height: 170px;
-    background-color: green;
-    border: 1px solid black;
+    margin-bottom: 5px;
+    align-items: flex-end;
 }
 
-.debug .container .row .main-content {
-    background-color: red;
+.container .row .main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.container .row .main-content .element .name {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.container .row .main-content .element .name h5 {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#last {
+    border: 2px solid rgb(148, 226, 26);
+}
+/* ********* debug  ********* */
+
+/* .debug .container .row {
+    height: 500px;
+} */
+
+/* .debug .container .row .side-bar {
+    background-color: blue;
+} */
+
+.debug .container .row .main-content .element {
+    background-color: green;
+    /* border: 1px solid black; */
+}
+
+/* .debug .container .row .main-content {
+    background-color: red;
+
+} */
 
 /* .debug .header-bar {
     height: 100px;
