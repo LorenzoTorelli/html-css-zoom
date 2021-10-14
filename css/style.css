@@ -5,12 +5,49 @@
     box-sizing: border-box;
 }
 
-.header-bar .point {
-    width: 2px;
-    height: 2px;
+/* ********* header ********* */
+.header-bar {
+    display: flex;
+    background-color: lightgray;
+}
+.header-bar .left-bar {
+    display: flex;
+    width: 40%;
 }
 
+.header-bar .point {
+    margin: 5px 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
 
+.red {
+    background-color: red;
+}
 
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.header-bar .right-bar {
+    display: flex;
+}
+.header-bar .right-bar .rectangle{
+    border: 3px solid white;
+    background-color: grey;
+    width: 150px;
+    height: 80%;
+}
 
 /* ********* debug  ********* */
+
+/* .debug .header-bar {
+    height: 100px;
+    background-color: blue;
+    
+} */
